@@ -1,23 +1,24 @@
 import React from 'react'
 import './app.css'
-import Home from './Components/Home/home'
 import Navbar from './Components/Navbar/Navbar'
-import Popular from './Components/Popular/Popular'
-import Offers from './Components/Offers/Offers'
+import Home from './Components/Home/Home'
 import About from './Components/About/About'
-import Blog from './Components/Blog/Blog'
+import Popular from './Components/Popular/Popular'
+import Offer from './Components/Offers/Offer'
 import Footer from './Components/Footer/Footer'
+import Blog from './Components/Blog/Blog'
+
 
 const App = () => {
   return (
     <>
     <Navbar/>
     <Home/>
-    {/* <Popular/>
-    <Offers/>
+    <Popular/>
+    <Offer/>
     <About/> 
-    <Blog/> 
-    <Footer/>  */}
+    {/* <Blog/>  */}
+    <Footer/> 
    </>
   )
 }
