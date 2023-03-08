@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
-import './home.css'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import React, {useEffect} from 'react';
+import './home.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import {Link} from "react-router-dom";
  
  const Home = () => {
     useEffect(()=>{
@@ -19,7 +20,7 @@ import 'aos/dist/aos.css'
              
            </p>
            <button data-aos="fade-up" data-aos-duration="3000" className="btn">
-                <a href="#">Start Now</a>
+                <Link to="/login">Start now</Link>
               </button>
         </div>
 

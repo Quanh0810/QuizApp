@@ -3,10 +3,12 @@ import './navbar.css'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 import {SiYourtraveldottv} from 'react-icons/si'
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
-
+  
   const [active, setActive]  = useState('navBar')
+
   const showNav = ()=>{
       setActive('navBar activeNavbar')
   }
@@ -50,10 +52,10 @@ const Navbar = () => {
               
               <div className="headerBtns flex">
               <button className="btn loginBtn">
-                <a href="#">Login</a>
+                <Link to="/login">Login</Link>
               </button>
               <button className="btn">
-                <a href="#">Sign Up</a>
+                <Link to="/register">Sign Up</Link>
               </button>
               </div>
             </ul>
